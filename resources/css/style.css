@@ -214,3 +214,40 @@ h3{
     transform: scale(1.03);
 }
 
+.works-step{
+    margin-bottom:30px ;
+}
+
+.step-1{
+    margin-top: 82px;
+}
+
+.steps-box:first-child{
+    text-align: center;
+    padding-right: 3%;
+}
+
+.steps-box:last-child{
+    padding-left: 2px;
+}
+
+.btn-app{
+    width: 20%;
+}
+
+.app-screen{
+    width: 90%;
+}
+
+.works-step div{
+    color: rgb(202, 87, 20);
+    border: 4px solid rgb(202, 87, 20);
+    border-radius: 50%;
+    display: inline-block;
+    height: 55px;
+    width:55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+}
