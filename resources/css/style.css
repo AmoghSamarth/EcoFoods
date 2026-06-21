@@ -306,3 +306,7 @@ a:active{
     border-bottom: transparent;
     transition: border-bottom 0.5s,color 0.5s;
 }
+
+.section-testimonials{
+    background-image: url(img/back-cust.jpeg);
+}
