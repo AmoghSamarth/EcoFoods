@@ -263,3 +263,14 @@ h3{
 .section-steps{
     background: #f4f4f4;
 }
+
+.section-cities img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.section-cities .row{
+    overflow: hidden;
+}
