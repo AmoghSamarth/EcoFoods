@@ -53,6 +53,7 @@ html{
 header{
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img/hero-image.avif');
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -251,7 +252,7 @@ h3{
     color: rgb(202, 87, 20);
     border: 4px solid rgb(202, 87, 20);
     border-radius: 50%;
-    display: inline-block;
+    /* display: inline-block; */
     height: 55px;
     width:55px;
     text-align: center;
@@ -307,6 +308,61 @@ a:active{
     transition: border-bottom 0.5s,color 0.5s;
 }
 
-.section-testimonials{
-    background-image: url(img/back-cust.jpeg);
+.sec-testimon-h2{
+    color: #fff;
 }
+
+.section-testimonials{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)) ,url(img/back-cust.jpeg);
+    background-size: cover;
+    color:#fff;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+blockquote{
+    padding: 2px;
+    font-style: italic;
+    line-height: 150%;
+    margin-top:40px
+}
+
+.section-testimonials img{
+    /* width: 100%; */
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    /* object-fit: cover; */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.section-testimonials .row{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.section-testimonials .col{
+    float: none;
+}
+
+blockquote{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+cite{
+    margin-top: auto;
+}
+
+blockquote::before{
+    content: '\201C';
+    font-size: 500%;
+    display: block;
+}
+
