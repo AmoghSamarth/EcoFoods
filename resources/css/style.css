@@ -6,7 +6,7 @@
 
 html{
     background-color: #ffffff;
-    color: #000000;
+    color: #717171;
     font-family: 'Lato', Arial, sans-serif;
     font-weight: 300;
     font-size: 25px;
@@ -45,8 +45,8 @@ html{
 
 .main-nav li a:hover,
 .main-nav li a:active{
-    border-bottom: 3px solid  rgb(202, 87, 20);
-    box-shadow: 0 4px 8px -4px rgb(202, 87, 20);
+    border-bottom: 3px solid  rgb(201, 96, 35);
+    box-shadow: 0 4px 8px -4px rgb(201, 96, 35);
     text-shadow:0px 0px 4px #fff;
 }
 
@@ -93,16 +93,16 @@ h1{
 
 .btn-full:link,
 .btn-full:visited{
-    background-color: rgb(202, 87, 20);
+    background-color: rgb(205, 103, 43);
     color: #dbdbdb;
-    border: 1px solid  rgb(202, 87, 20);
+    border: 1px solid  rgb(205, 103, 43);
     margin-right: 25px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited{
-    border: 1px solid  rgb(202, 87, 20);
-    color:  rgb(202, 87, 20);
+    border: 1px solid  rgb(205, 103, 43);
+    color:  rgb(205, 103, 43);
 }
 
 .btn:hover,
@@ -285,7 +285,7 @@ h3{
     display: inline-block;
     width: 30px;
     text-align: center;
-    color: rgb(202, 87, 20);
+    color: rgb(217, 110, 48);
     font-size: 120%;
     line-height: 120%;
     vertical-align: middle;
@@ -364,4 +364,60 @@ blockquote::before{
     content: '\201C';
     font-size: 500%;
     display: block;
+}
+
+.section-plans{
+    background-color: #f4f4f4;
+    padding-left: 25px;
+    overflow: hidden;
+}
+
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5px;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: rgb(230, 120, 57);
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Lato', 'Noto Sans', Arial, sans-serif;
+}
+
+.plan-price-meal{
+    font-size: 80%;
+}
+
+.plan-price span{   
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul>li{
+    padding: 15px;
+}
+
+.plan-box div:last-child{
+    border:0;
+    text-align: center;
+    /* height: 10%; */
+}
+
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
