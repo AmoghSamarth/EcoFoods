@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    padding-left: 5px;
     box-sizing: border-box;
 }
 
@@ -455,3 +454,4 @@ input[type=submit]{
     padding: 9px;
     font-size: 60%;
 }
+
