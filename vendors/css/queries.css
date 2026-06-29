@@ -1,39 +1,75 @@
-/* =============================================
-   Big tablets — up to 1200px
-   ============================================= */
+/* ==============================================
+   Big tablets — max 1200px
+   ============================================== */
 @media only screen and (max-width: 1200px) {
 
-    .hero-text-box {
-        width: 100% !important;
-        left: 0 !important;
-        top: 50% !important;
-        transform: translateY(-50%) !important;
-        padding: 0 6%;
-        box-sizing: border-box;
+    /* --- Nav --- */
+    .main-nav {
+        margin-top: 45px;
     }
 
     .main-nav li {
         margin-right: 25px;
     }
 
-    .main-nav {
-        margin-top: 55px;
+    /* --- Hero --- */
+    h1 { font-size: 300%; }
+
+    /* --- Features --- */
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    /* --- App buttons --- */
+    .btn-app img {
+        width: 220px;
+        height: 75px;
     }
 }
 
-/* =============================================
-   Small tablets — up to 1023px
-   ============================================= */
+/* ==============================================
+   Small tablets — max 1023px
+   ============================================== */
 @media only screen and (max-width: 1023px) {
 
     body { font-size: 18px; }
 
     /* --- Nav --- */
+    .main-nav {
+        margin-top: 35px;
+    }
+
     .main-nav li {
         margin-right: 15px;
     }
 
-    /* --- Steps --- */
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        font-size: 1em;
+    }
+
+    /* --- Hero --- */
+    h1 { font-size: 250%; }
+
+    .btn:link,
+    .btn:visited {
+        padding: 15px 30px;
+        font-size: 100%;
+    }
+
+    /* --- Features: 2 per row --- */
+    .col.span_1_of_4 {
+        width: 50%;
+        float: left;
+    }
+
+    .long-copy {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    /* --- Steps: stack vertically --- */
     .col.span_1_of_2 {
         width: 100%;
         float: none;
@@ -42,26 +78,39 @@
     .steps-box:first-child {
         text-align: center;
         padding-right: 0;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .steps-box:last-child {
-        padding-left: 0;
-        text-align: left;
+        padding-left: 10px;
     }
 
     .app-screen { width: 40%; }
 
     .btn-app img {
-        width: 200px;
-        height: 70px;
+        width: 190px;
+        height: 65px;
+    }
+
+    .works-step:last-of-type {
+        margin-bottom: 50px;
     }
 
     /* --- Cities: 2 per row --- */
-    .col.span_1_of_4 {
+    .section-cities .col.span_1_of_4 {
         width: 50%;
         float: left;
         margin-bottom: 30px;
+    }
+
+    /* --- Testimonials: stack --- */
+    .section-testimonials .row {
+        flex-direction: column;
+    }
+
+    .section-testimonials .col {
+        width: 100%;
+        margin-bottom: 40px;
     }
 
     /* --- Plans: stack vertically --- */
@@ -72,11 +121,95 @@
     }
 
     .plan-box {
-        width: 70%;
+        width: 60%;
         margin: 0 auto;
     }
 
-    /* --- Testimonials: stack vertically --- */
+    /* --- Contact form --- */
+    .contact-form { width: 80%; }
+
+    /* --- Footer --- */
+    .footer-nav li,
+    .social-links li {
+        margin-right: 12px;
+    }
+}
+
+/* ==============================================
+   Phones + small tablets — max 767px
+   ============================================== */
+@media only screen and (max-width: 767px) {
+
+    body { font-size: 16px; }
+
+    /* --- Nav: hide --- */
+    .main-nav { display: none; }
+
+    .logo {
+        width: 150px;
+    }
+
+    /* --- Hero --- */
+    h1 { font-size: 200%; }
+
+    .btn:link,
+    .btn:visited {
+        padding: 12px 25px;
+        font-size: 90%;
+    }
+
+    /* --- Headings --- */
+    h2 {
+        font-size: 160%;
+        margin: 40px 0 20px 0;
+    }
+
+    h2::after { width: 150px; }
+
+    h3 { font-size: 140%; }
+
+    /* --- Features: 1 per row --- */
+    .col.span_1_of_4 {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .box { margin-bottom: 30px; }
+
+    /* --- Meals: 2 per row --- */
+    .meals-showcase li {
+        flex: 1 0 50%;
+        max-width: 50%;
+    }
+
+    /* --- Steps --- */
+    .app-screen { width: 55%; }
+
+    .btn-app img {
+        width: 160px;
+        height: 55px;
+        margin-right: 5px;
+    }
+
+    .works-step div {
+        height: 45px;
+        width: 45px;
+        font-size: 120%;
+    }
+
+    /* --- Cities: 1 per row --- */
+    .section-cities .col.span_1_of_4 {
+        width: 100%;
+        float: none;
+        margin-bottom: 25px;
+    }
+
+    .section-cities img {
+        height: 180px;
+    }
+
+    /* --- Testimonials --- */
     .section-testimonials .row {
         flex-direction: column;
     }
@@ -86,69 +219,72 @@
         margin-bottom: 30px;
     }
 
-    /* --- Contact form --- */
-    .contact-form { width: 80%; }
-}
-
-/* =============================================
-   Phones + small tablets — up to 767px
-   ============================================= */
-@media only screen and (max-width: 767px) {
-
-    body { font-size: 16px; }
-
-    /* --- Nav: hide for now --- */
-    .main-nav { display: none; }
-
-    /* --- Hero --- */
-    h1 { font-size: 200%; }
-
-    /* --- Headings --- */
-    h2 { font-size: 150%; }
-    h2::after { width: 150px; }
-
-    /* --- Features: 1 per row --- */
-    .col.span_1_of_4 {
-        width: 100%;
-        float: none;
-        margin-bottom: 20px;
-    }
-
-    /* --- Steps --- */
-    .app-screen { width: 60%; }
-
-    .btn-app img {
-        width: 170px;
-        height: 58px;
-    }
-
-    /* --- Cities: 1 per row --- */
-    .section-cities .col.span_1_of_4 {
-        width: 100%;
-        float: none;
+    blockquote::before {
+        font-size: 350%;
     }
 
     /* --- Plans --- */
-    .plan-box { width: 90%; }
+    .col.span_1_of_3 {
+        width: 100%;
+        float: none;
+        margin-bottom: 25px;
+    }
+
+    .plan-box {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .plan-price { font-size: 220%; }
 
     /* --- Contact form --- */
     .contact-form { width: 95%; }
 
+    .col.span_1_of_3,
+    .col.span_2_of_3 {
+        width: 100%;
+        float: none;
+    }
+
+    .section-form label {
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    input[type=submit] {
+        width: 50%;
+        margin-top: 10px;
+    }
+
     /* --- Footer --- */
+    .col.span_1_of_2 {
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
     .footer-nav,
     .social-links {
         float: none;
         text-align: center;
         width: 100%;
-        margin-bottom: 20px;
     }
+
+    .footer-nav li,
+    .social-links li {
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+
+        
 
     .copyright { text-align: center !important; }
 }
 
-/* =============================================
-   Small phones — up to 480px
-   ============================================= */
+/* ==============================================
+   Small phones — max 480px
+   ============================================== */
 @media only screen and (max-width: 480px) {
 
     body { font-size: 14px; }
@@ -159,12 +295,30 @@
         letter-spacing: 1px;
     }
 
-    .btn {
-        padding: 12px 20px;
+    .btn:link,
+    .btn:visited {
+        padding: 10px 18px;
         font-size: 85%;
+        display: block;
+        width: 80%;
+        margin: 0 auto 10px auto;
+        text-align: center;
     }
 
-    /* --- Meals grid: 2 per row --- */
+    .btn-full:link,
+    .btn-full:visited {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* --- Headings --- */
+    h2 { font-size: 140%; }
+    h2::after { width: 120px; }
+
+    /* --- Features --- */
+    .icon-big { font-size: 280%; }
+
+    /* --- Meals: 2 per row --- */
     .meals-showcase li {
         flex: 1 0 50%;
         max-width: 50%;
@@ -174,20 +328,37 @@
     .app-screen { width: 70%; }
 
     .btn-app img {
-        width: 140px;
-        height: 48px;
-        margin-right: 5px;
+        width: 130px;
+        height: 45px;
+        margin-right: 3px;
     }
 
+    .works-step div {
+        height: 40px;
+        width: 40px;
+        font-size: 110%;
+        padding: 4px;
+    }
+
+    /* --- Cities --- */
+    .section-cities img { height: 150px; }
+
     /* --- Plans --- */
-    .plan-box { width: 100%; }
+    .plan-box { width: 95%; }
+    .plan-price { font-size: 180%; }
 
     /* --- Contact form --- */
     .contact-form { width: 100%; }
-
-    input[type=submit] { width: 50%; }
+    input[type=submit] { width: 70%; }
 
     /* --- Footer --- */
-    footer { padding: 25px; }
+    footer { padding: 25px 15px; }
+
+    .footer-nav li,
+    .social-links li {
+        display: block;
+        margin-bottom: 8px;
+    }
+
     .copyright { text-align: center !important; }
 }
