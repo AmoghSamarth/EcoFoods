@@ -190,11 +190,14 @@ h3{
     margin-bottom: 15px;
 }
 
+.section-features{
+    /* padding-bottom:22px; */
+}
+
 .meals-showcase {
     list-style: none;
     width: 100%;
     margin: 0;
-    padding: 0;
     display: flex;
 }
 
