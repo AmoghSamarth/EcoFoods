@@ -1,6 +1,7 @@
 # 🌿 EcoFoods
 
 A responsive food delivery landing page built with pure HTML and CSS. EcoFoods promotes healthy, organic, and eco-friendly food delivery as an alternative to junk food.
+- Live link: [EcoFoods](https://eco-foods.netlify.app/)
 
 ---
 
@@ -93,7 +94,6 @@ Open `index.html` directly in your browser or use Live Server in VS Code.
 ## 👨‍💻 Author
 
 **Amogh Samarth**
-- Portfolio: [amoghsamarth.netlify.app](https://amoghsamarth.netlify.app)
 - GitHub: [@AmoghSamarth](https://github.com/AmoghSamarth)
 - LinkedIn: [amogh-samarth](https://linkedin.com/in/amogh-samarth-37109328b)
 
